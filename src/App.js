@@ -1,6 +1,5 @@
 // Installez d'abord React en utilisant la commande : npm install react react-dom
 import React, { useState } from "react";
-import Group from './images/Group.png'
 import { RiDeleteBin6Line } from "react-icons/ri";
 
 import "./App.css"; // Assurez-vous de créer ce fichier CSS pour les styles
@@ -28,12 +27,6 @@ function TodoList() {
           type="text"
           placeholder="Ajouter une nouvelle tâche"
           required
-          onKeyPress={(e) => {
-            if (e.key === "Enter") {
-              handleAddTask(e.target.value);
-              e.target.value = "";
-            }
-          }}
         />
         <button
           className="pousse position-absolute"
